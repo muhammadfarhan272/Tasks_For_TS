@@ -1,16 +1,16 @@
 "use strict";
-function searchInsert(nums, target) {
+function searchInsert(nums, targets) {
     let left_ind = 0;
     let right_ind = nums.length - 1;
     while (right_ind >= left_ind) {
         //Find the mid
         const mid = Math.floor((left_ind + right_ind) / 2);
-        //Compare mid value with target if maatch then return mid
-        if (nums[mid] === target) {
+        //Compare mid value with targets if maatch then return mid
+        if (nums[mid] === targets) {
             return mid;
         }
         // We are creating boundary of array 
-        else if (nums[mid] > target) {
+        else if (nums[mid] > targets) {
             right_ind = mid - 1;
         }
         else {
@@ -21,5 +21,5 @@ function searchInsert(nums, target) {
 }
 const nums = [1, 3, 5, 6];
 const targets = 5;
-const index = searchInsert(nums, target);
+const index = searchInsert(nums, targets);
 console.log(index); // Output: 2
