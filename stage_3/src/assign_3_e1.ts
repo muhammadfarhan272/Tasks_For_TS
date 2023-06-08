@@ -1,6 +1,6 @@
 function searchInsert(nums:number[], target:number):number {
-    let left_ind = 0;
-    let right_ind = nums.length - 1;
+    let left_ind:number = 0;
+    let right_ind:number = nums.length - 1;
 
     while (right_ind >= left_ind) {
         //Find the mid
@@ -20,7 +20,7 @@ function searchInsert(nums:number[], target:number):number {
 
     return left_ind;
 }
-const nums = [1, 3, 5, 6];
+const nums:number[] = [1, 3, 5, 6];
 const targets:number = 5;
-const index = searchInsert(nums, target);
+const index:number = searchInsert(nums, target);
 console.log(index); // Output: 2
