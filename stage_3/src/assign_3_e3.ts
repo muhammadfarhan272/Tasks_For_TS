@@ -1,4 +1,4 @@
-function sInsert(numArr:number[], tar:number):number {
+function seaInsert(numArr:number[], tar:number):number {
     let left_ind:number = 0;
     let right_ind:number = numArr.length - 1;
 
@@ -22,5 +22,5 @@ function sInsert(numArr:number[], tar:number):number {
 }
 const numArr:number[] = [1, 3, 5, 6];
 const tar:number = 7;
-const inde:number = sInsert(numArr, tar);
+const inde:number = seaInsert(numArr, tar);
 console.log(inde); // Output: 4

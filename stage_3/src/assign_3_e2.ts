@@ -1,4 +1,4 @@
-function sInsert(numsArr:number[], targe:number):number {
+function seInsert(numsArr:number[], targe:number):number {
     let left_ind:number = 0;
     let right_ind:number = numsArr.length - 1;
 
@@ -22,5 +22,5 @@ function sInsert(numsArr:number[], targe:number):number {
 }
 const numsArr:number[] = [1, 3, 5, 6];
 const targe:number = 2;
-const ind:number = sInsert(numsArr, targe);
+const ind:number = seInsert(numsArr, targe);
 console.log(ind); // Output: 1

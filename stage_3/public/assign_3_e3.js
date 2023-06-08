@@ -1,5 +1,5 @@
 "use strict";
-function sInsert(numArr, tar) {
+function seaInsert(numArr, tar) {
     let left_ind = 0;
     let right_ind = numArr.length - 1;
     while (right_ind >= left_ind) {
@@ -21,5 +21,5 @@ function sInsert(numArr, tar) {
 }
 const numArr = [1, 3, 5, 6];
 const tar = 7;
-const inde = sInsert(numArr, tar);
+const inde = seaInsert(numArr, tar);
 console.log(inde); // Output: 4
